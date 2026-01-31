@@ -1,0 +1,7 @@
+# Design files
+*.xd
+*.psd
+*.ai
+*.sketch
+*.fig
+dir -Force
