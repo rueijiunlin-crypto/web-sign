@@ -1,8 +1,12 @@
 <!DOCTYPE html>
+<!-- DOCTYPE：告訴瀏覽器這是 HTML5 -->
 <html lang="zh-Hant-TW">
+<!-- lang 表示主要語言，影響搜尋與讀屏 -->
 <head>
     <meta charset="UTF-8">
+    <!-- 使用 UTF-8 避免中文亂碼 -->
     <title>給水豚子的情書</title>
+    <!-- title 會出現在瀏覽器分頁標題 -->
 </head>
 <body>
     <h1>親愛的水豚子</h1>               <!-- h1大標題 h2中標一路到h6最小標 -->
@@ -12,6 +16,7 @@
 
         <h2>自我介紹</h2>
             <img src="capyzou.png" alt="水豚藏的大頭照">  <!-- 插入圖片用<img src="圖片路徑" alt="替代文字"> -->
+            <!-- alt 是替代文字：圖片讀不到或讀屏時會使用 -->
             <p>你應該不知道我是誰，容我先自我介紹。</p>
 
             <h3>興趣</h3>
@@ -29,10 +34,11 @@
             </dl>
             <h3>社群媒體（依追蹤人數多寡排序）</h3> 
                 <ol>                           <!-- 有序清單用<ol>~</ol> 列表項目用<li>~</li> -->
-                    <li><a href="#"target="_blank">Capitter</a></li>   <!-- 超連結用<a href="網址or電話等連結">連結文字</a> -->
-                    <li><a href="#"target="_blank">CapyBook</a></li>
-                    <li><a href="#"target="_blank">Capistagram</a></li> <!-- target="_blank" 讓連結在新分頁開啟 -->
+                    <li><a href="#" target="_blank" rel="noopener">Capitter</a></li>   <!-- 超連結用<a href="網址or電話等連結">連結文字</a> -->
+                    <li><a href="#" target="_blank" rel="noopener">CapyBook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Capistagram</a></li> 
                 </ol>
+                <!-- target="_blank" 會在新分頁開啟，實務上可加 rel="noopener" 防止新分頁用 window.opener 影響原頁 -->
 
             <h2>想對水豚子說的話</h2>
                 <p>我在超市遇到你，<br>雖然想和你說話，
@@ -43,6 +49,7 @@
                 <p>我脫離上班族，開始務農已經6年。<br>
                 你聽到這件事可能會覺得不安，但是農場的營業額逐年增加，不用擔心將來的生活。</p>
                     <table>                     <!-- 表格用<table>~</table> 表頭用<thead>~</thead> 表列用<tr>~</tr> 表格標題用<th>~</th> -->
+                        <!-- thead 放表頭、tbody 放內容，便於語意與樣式控制 -->
                         <thead>
                             <tr>
                                 <th>年數</th>
@@ -82,7 +89,8 @@
             <h2>約會邀請</h2>        <!-- 強調文字斜體<em>~</em> 粗體文字用<strong>~</strong> 標記文字用<mark>~</mark> -->
                 <p>請問你是否願意<em>跟這樣的我約會呢？</em><br>        
                 你可以親自來這裡告訴我，或打電話與我聯絡。</p>
-            <address>               <!-- 地址用<address>~</address> -->
+            <address>               
+                <!-- address 用於聯絡資訊，不只是地址 -->
                 <p>水豚湖畔 11-33-12  農夫水豚藏 收</p> 
                 <p><a href="tel:080-XXXX-XXXX">080-XXXX-XXXX</a></p>   <!-- 電話連結用tel: -->
             </address>

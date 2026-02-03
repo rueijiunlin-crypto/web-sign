@@ -2,17 +2,21 @@
 <html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8">
-    <title>練習設定相對路徑</title>
+    <title>練習設定路徑</title>
+    <!-- 相對路徑以此 HTML 檔案所在資料夾為基準 -->
   </head>
   <body> <!-- 如果程式只會運行在本機端的話可以使用絕對路徑，就是打開檔案總管時最上面那一大串路徑，但如果程式會分享給別人像是網站的話則一定要使用相對路徑才不會有找不到的問題 -->
+    <!-- ./ 表示同層（可省略），../ 表示上一層 -->
     <ul>
       <li>
         請練習顯示 a.png <br>
         <img src="a.png"> <!-- 相同資料夾 a.png -->
+        <!-- 也可寫成 ./a.png -->
       </li>
       <li>
         請練習顯示images資料夾內的 b.png <br>
         <img src="images/b.png"> <!-- 根目錄開始 /images/b.png -->
+        <!-- 注意：沒有前導 / 時是相對路徑，不是網站根目錄 -->
       </li>
       <li>
         請練習顯示directory-a資料夾內的 c.png <br>
