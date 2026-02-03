@@ -2,41 +2,41 @@
 <html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8">
-    <title>練習設定路徑</title>
+    <title>練習設定相對路徑</title>
   </head>
-  <body>
+  <body> <!-- 如果程式只會運行在本機端的話可以使用絕對路徑，就是打開檔案總管時最上面那一大串路徑，但如果程式會分享給別人像是網站的話則一定要使用相對路徑才不會有找不到的問題 -->
     <ul>
       <li>
         請練習顯示 a.png <br>
-        <img src="請在這裡輸入路徑">
+        <img src="a.png"> <!-- 相同資料夾 a.png -->
       </li>
       <li>
         請練習顯示images資料夾內的 b.png <br>
-        <img src="請在這裡輸入路徑">
+        <img src="images/b.png"> <!-- 根目錄開始 /images/b.png -->
       </li>
       <li>
         請練習顯示directory-a資料夾內的 c.png <br>
-        <img src="請在這裡輸入路徑">
+        <img src="directory-a/c.png">  <!-- 相對路徑 directory-a/c.png -->
       </li>
       <li>
         請練習顯示directory-a資料夾images資料夾內的 d.png <br>
-        <img src="請在這裡輸入路徑">
+        <img src="directory-a/images/d.png"> <!-- 相對路徑 directory-a/images/d.png -->
       </li>
       <li>
         請練習顯示上一層的 e.png <br>
-        <img src="請在這裡輸入路徑">
+        <img src="../e.png"> <!-- 上一層 ../e.png -->
       </li>
       <li>
         請練習顯示上一層images資料夾內的 f.png <br>
-        <img src="請在這裡輸入路徑">
+        <img src="../images/f.png"> <!-- 上一層 ../images/f.png -->
       </li>
       <li>
         請練習顯示上一層directory-b資料夾內的 g.png <br>
-        <img src="請在這裡輸入路徑">
+        <img src="../directory-b/g.png"> <!-- 上一層 ../directory-b/g.png -->
       </li>
       <li>
         請練習顯示上一層directory-b資料夾images資料夾內的 h.png <br>
-        <img src="請在這裡輸入路徑">
+        <img src="../directory-b/images/h.png"> <!-- 上一層 ../directory-b/images/h.png -->
       </li>
   </body>
 </html>
